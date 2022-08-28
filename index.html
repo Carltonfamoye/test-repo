@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlton</title>
+</head>
+<body>
+    <input type="text" id="name"/>
+    <button onclick="toggleAlert()">Click me</button>
+
+    <script type="text/javascript" >
+        
+        let name = document.getElementById('name');
+        name.addEventListener('change', ()=>{
+            textValue = name.value;
+            console.log(textValue)
+        })
+
+
+        const toggleAlert = ()=>{
+            alert(`Welcome to a popup ` + textValue);
+        }
+    </script>
+</body>
+</html>
